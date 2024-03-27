@@ -1,0 +1,18 @@
+************************
+login.php
+************************
+
+if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
+    header("location: dashboard.php");
+    exit;
+}
+
+************************
+dashboard.php
+************************
+
+
+<?php if (isset($_SESSION["username"])) : ?>
+    <p class="title">Thank you <?php echo $_SESSION['username']; ?>, for subscribing.</p>
+    Click here to <a href="logout.php">Logout</a>
+<?php endif; ?>
