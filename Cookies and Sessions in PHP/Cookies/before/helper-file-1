@@ -1,0 +1,69 @@
+clip 2: Creating Cookies
+
+about-us.php
+
+<?php
+
+if (isset($_POST['subscribe'])) {
+
+    if (isset($_POST['name']) & !empty($_POST['name'])) {
+        setcookie( 'name', $_POST['name']);
+    }
+}
+?>
+
+$options['expires'] = time() + 3600;
+setcookie( 'name', $_POST['name'], $options);
+
+**************
+**************
+
+clip 3: Using Cookies
+
+index.php
+
+<?php if (isset($_COOKIE['name'])) : ?>
+    <h3 class="title">Welcome <?php echo $_COOKIE['name']?></h3>
+<?php else: ?>
+    <form method="post" action="about-us.php">
+        <div class="row">
+            <label for="name" class="col-sm-3">Your Name:</label>
+            <input  type="text" name="name" class="col-sm-6" />
+        </div>
+        <button class="btn btn-primary" type="submit" name="subscribe">Subscribe</button>
+    </form>
+<?php endif; ?>
+
+**************
+
+about-us.php
+
+<?php if (isset($_COOKIE['name'])) : ?>
+    <h5 class="title">
+        Thank you <?php echo $_COOKIE['name']?>, for subscribing to our services</h5>
+<?php endif; ?>
+
+**************
+**************
+
+clip 4: Deleting Cookies
+
+about-us.php
+
+ <form method="post" action="about-us.php">
+    <button class="btn btn-primary" type="submit" name="unsubscribe">Unsubscribe</button>
+</form>
+
+**************
+
+
+if (isset($_POST['unsubscribe']) && isset($_COOKIE['name']) ) {
+    $options['expires'] = time() - 60;
+    setcookie( 'name', $_COOKIE['name'], $options);
+    echo 'Cookies Deleted';
+}
+
+?>
+
+**************
+

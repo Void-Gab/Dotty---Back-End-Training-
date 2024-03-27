@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #fbfcfc;
+}
+
+body {
+    background-color: #404040;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: black;
+}
+
+label {
+    padding-top: 15px;
+}
+
+div {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+pre {
+    color: #fbfcfc;
+}
