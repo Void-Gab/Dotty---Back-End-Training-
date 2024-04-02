@@ -1,0 +1,42 @@
+/* general */
+
+html {
+  height: 100%; width: 100%;
+  margin: 0; padding: 0;
+}
+
+body {
+  height: 100%; width: 100%;
+  margin: 0; padding: 0;
+  font-size: 20px;
+  color: #1B1B1B;
+}
+
+#main-content {
+  width: 600px;
+  padding: 10px 0 20px;
+  margin: auto;
+}
+
+
+form select, form select option {
+  font-size: 15px;
+  padding: 3px 6px;
+}
+
+.controls {
+  margin-top: 10px;
+}
+
+.controls input {
+  font-size: 16px;
+  width: 100px;
+  height: 25px;
+  color: black;
+  background: white;
+  border: 1px solid black;
+}
+
+label {
+  font-weight:bold;
+}

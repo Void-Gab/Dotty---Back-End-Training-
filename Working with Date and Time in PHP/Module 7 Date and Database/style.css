@@ -1,0 +1,58 @@
+/* general */
+
+html {
+    height: 100%; width: 100%;
+    margin: 0; padding: 0;
+}
+
+body {
+    height: 100%; width: 100%;
+    margin: 0; padding: 0;
+    font-size: 18px;
+    color: #1B1B1B;
+}
+
+#main-content {
+    width: 700px;
+    padding: 10px 0 20px;
+    text-align: center;
+    margin: auto;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+th, td {
+    padding: 0.5em 1em;
+    border-bottom: solid 1px;
+}
+
+form select, form select option {
+    font: 14px Arial,"Helvetica Neue",Helvetica,sans-serif;
+    padding: 3px 6px;
+}
+
+.controls {
+    margin-top: 10px;
+}
+
+.controls input {
+    font-size: 14px;
+    width: 150px;
+    height: 20px;
+    color: black;
+    background: white;
+    border: 1px solid black;
+}
+
+.controls.btn input {
+    width: 100px;
+    height: 25px;
+    background-color: #EEEEEE;
+}
+
+.controls input:hover {
+    color: white;
+    background: black;
+}
