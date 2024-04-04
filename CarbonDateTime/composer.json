@@ -1,0 +1,20 @@
+{
+    "name": "ssd/carbon-date-time",
+    "autoload": {
+        "psr-4": {
+            "Ssd\\CarbonDateTime\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Void-Gab",
+            "email": "87055247+Void-Gab@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "nesbot/carbon": "^3.2"
+    },
+    "require-dev": {
+        "kylekatarnls/carbonite": "^2.0"
+    }
+}
