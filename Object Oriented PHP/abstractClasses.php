@@ -1,9 +1,10 @@
 <?php
+echo "print this \n";
   abstract class Electricity{
     abstract function voltage();
     abstract function electricity();
     abstract function outletStyle();
-
+    
     public function powerOn(){
 
     }
@@ -11,6 +12,7 @@
       
     }
   }
+  echo "do not print";
 
   class Television extends Electricity{
     public function changeChannel(){
